@@ -1,9 +1,19 @@
+import { Route, Routes } from "react-router-dom";
+import Header from "./pages/header/header";
+import Login from "./pages/auth/login/login";
+import Signup from "./pages/auth/signup/signup";
+import Dashboard from "./pages/dashboard/dashboard";
+
 function App() {
   return (
-    <div className="App">
-      <h1 className=" text-center ">React Application</h1>
-    </div>
-
+    <>
+      <Header />
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Signup />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </>
   );
 }
 
