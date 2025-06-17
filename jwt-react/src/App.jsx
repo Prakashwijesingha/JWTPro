@@ -3,6 +3,7 @@ import Header from "./pages/header/header";
 import Login from "./pages/auth/login/login";
 import Signup from "./pages/auth/signup/signup";
 import Dashboard from "./pages/dashboard/dashboard";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
